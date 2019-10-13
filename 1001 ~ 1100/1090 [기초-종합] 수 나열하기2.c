@@ -2,16 +2,14 @@
 
 int main()
 {
-    int a = 0, d = 0, n = 0;
-    int result = 0;
-    scanf("%d %d %d", &a, &d, &n);
-    for (int i = 0; i < n; i++)
+    int a = 0, r = 0, n = 0;
+    long long result = 0;
+    scanf("%d %d %d", &a, &r, &n);
+    result = a;
+    for (int i = 0; i < n - 1; i++)
     {
-        if (i == 0)
-            result = a;
-        else
-            result *= d;
+        result *= r;
     }
-    printf("%d", result);
+    printf("%lld", result);
     return 0;
 }
