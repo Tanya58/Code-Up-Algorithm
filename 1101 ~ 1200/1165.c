@@ -4,13 +4,10 @@ int main()
 {
     int minute = 0, score = 0;
     scanf("%d %d", &minute, &score);
-
-    int count = 0;
-    while (minute + count < 90)
+    score += (90 - minute) / 5;
+    if ((90 - minute) % 5)
     {
-        if (count % 5 == 0)
-            score++;
-        count++;
+        score++;
     }
     printf("%d", score);
     return 0;
