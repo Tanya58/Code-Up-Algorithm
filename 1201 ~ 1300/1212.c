@@ -2,21 +2,8 @@
 
 int main()
 {
-    int len[3] = {0};
-    scanf("%d %d %d", &len[0], &len[1], &len[2]);
-
-    int flag = 0;
-    for (int i = 0; i < 3; i++)
-    {
-        if (len[i] >= len[(i + 1) % 3] && len[i] >= len[(i + 2) % 3])
-        {
-            if (len[i] < len[(i + 1) % 3] + len[(i + 2) % 3])
-            {
-                flag = 1;
-                break;
-            }
-        }
-    }
-    printf("%s", flag ? "yes" : "no");
+    int a = 0, b = 0, c = 0;
+    scanf("%d %d %d", &a, &b, &c);
+    printf("%s", a < b + c && b < a + c && c < a + b ? "yes" : "no");
     return 0;
 }
