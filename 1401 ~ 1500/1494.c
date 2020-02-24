@@ -2,29 +2,32 @@
 
 int main()
 {
-    int n = 0, m = 0;
-    scanf("%d %d", &n, &m);
+    int d[100] = {0};
 
-    int arr[100][100] = {0};
-    for (int i = 0; i < n; i++)
+    int n = 0, k = 0;
+    scanf("%d %d", &n, &k);
+
+    int s = 0, e = 0, u = 0;
+    for (int i = 0; i < k; i++)
     {
-        for (int j = 0; j < m; j++)
-        {
-            scanf("%d", &arr[i][j]);
-        }
+        scanf("%d %d %d", &s, &e, &u);
+
+        d[s - 1] += u;
+        d[e] -= u;
     }
 
-    int sum[100] = {0};
     for (int i = 0; i < n; i++)
     {
-        int tmp = 0;
-        for (int j = 0; j < m; j++)
-        {
-            tmp += arr[i][j];
-            sum[j] += tmp;
-            printf("%d ", sum[j]);
-        }
-        printf("\n");
+        printf("%d ", d[i]);
+    }
+
+    printf("\n");
+
+    int sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += d[i];
+        printf("%d ", sum);
     }
 
     return 0;
