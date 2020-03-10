@@ -5,8 +5,8 @@ int main()
     int n = 0;
     scanf("%d", &n);
 
-    int len = n / 2;
-    printf("%d", (len / 2) * (len - len / 2));
+    float half = (float)n / 2;
+    printf("%d", (int)(half / 2 * (half - half / 2)));
 
     return 0;
 }
