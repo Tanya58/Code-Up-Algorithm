@@ -4,22 +4,15 @@ int n, d[110];
 
 int f()
 {
-    int max = d[0];
+    int a = 0;
     for (int i = 1; i < n; i++)
     {
-        if (max < d[i])
+        if (d[a] < d[i])
         {
-            max = d[i];
+            a = i;
         }
     }
-
-    for (int i = 0; i < n; i++)
-    {
-        if (max == d[i])
-        {
-            return i + 1;
-        }
-    }
+    return a + 1;
 }
 
 int main()
