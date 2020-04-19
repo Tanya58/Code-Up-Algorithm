@@ -17,11 +17,11 @@ int main()
 
     for (int i = 0; i < 7; i++)
     {
-        for (int tw = 0; tw < h; tw++)
+        for (int th = 0; th < h; th++)
         {
             for (int j = 0; j < strlen(codeup[i]); j++)
             {
-                for (int th = 0; th < w; th++)
+                for (int tw = 0; tw < w; tw++)
                 {
                     printf("%c", codeup[i][j]);
                 }
