@@ -16,3 +16,5 @@ int main()
     printf("%d", f(n, r));
     return 0;
 }
+
+//f(n,r){return r&&n^r?f(n-1,r-1)+f(n-1,r):1;}main(n,r){scanf("%d%d",&n,&r);printf("%d",f(n,r));}
