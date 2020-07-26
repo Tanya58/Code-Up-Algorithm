@@ -7,6 +7,8 @@
 
 [CodeUp](https://codeup.kr/)에서 푼 문제를 관리하기 위한 저장소이다.
 
+1일 1커밋 도전중
+
 ## THANKS
 
 - [ndb796](https://github.com/ndb796/Code-Up-Algorithm)
